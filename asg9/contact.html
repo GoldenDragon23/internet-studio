@@ -1,0 +1,108 @@
+<!-- contact.html -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Florida Getaway</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif; 
+        margin: 0; 
+        padding: 0; 
+        background: #f4f9ff;
+    }
+
+    header, footer {
+        background: #0077b6; 
+        color: white; 
+        padding: 15px; 
+        text-align: center;
+    }
+
+    nav a {
+        color: white; 
+        text-decoration: none; 
+        margin: 0 10px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        padding: 20px; 
+        max-width: 600px; 
+        margin: auto; 
+        background: white; 
+        border-radius: 10px; 
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    form {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    label {
+        margin-top: 10px; 
+        font-weight: bold;
+    }
+
+    input, textarea {
+        padding: 10px; 
+        border: 1px solid #ccc; 
+        border-radius: 5px; 
+        margin-top: 5px;
+    }
+
+    .cta {
+        background: #00b4d8; 
+        color: white; 
+        border: none; 
+        padding: 10px; 
+        border-radius: 5px; 
+        margin-top: 15px; 
+        cursor: pointer;
+    }
+    .cta:hover {
+        background: #0096c7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="activities.html">Things To Do</a>
+      <a href="dining.html">Places To Eat</a>
+      <a href="statement.html">Design Statement</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form action="mailto:info@floridagetaway.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone #:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="4" required></textarea>
+
+      <button type="submit" class="cta">Submit</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>© 2025 Florida Getaway | Email: info@floridagetaway.com | Phone: (555) 123-4567</p>
+  </footer>
+</body>
+</html>
