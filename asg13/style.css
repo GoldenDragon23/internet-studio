@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Nature-Black';
+    src: url('fonts/ZTNature-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nature-BlackItalic';
+    src: url('fonts/ZTNature-BlackItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nature-Medium';
+    src: url('fonts/ZTNature-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nature-MediumItalic';
+    src: url('fonts/ZTNature-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nature-Thin';
+    src: url('fonts/ZTNature-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nature-ThinItalic';
+    src: url('fonts/ZTNature-ThinItalic.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    font-family: 'Nature-Medium', sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Nature-Black', sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 30px;
+    color: #2b4c7e;
+}
+
+h2 {
+    font-size: 1.6em;
+    color: #1f355b;
+}
+
+p {
+    font-size: 1em;
+    font-family: 'Nature-Medium', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.intro {
+    background: #e9eff7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: 'Nature-Thin', sans-serif;
+}
+
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.job-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: 0.3s;
+    font-family: 'Nature-Medium', sans-serif;
+}
+
+.job-card:hover {
+    transform: translateY(-4px);
+}
+
+.job-card img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.job-card h3 {
+    font-family: 'Nature-Black', sans-serif;
+}
+
+.job-card a {
+    color: #2b4c7e;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Nature-Medium', sans-serif;
+}
+
+.job-card a:hover {
+    text-decoration: underline;
+}
